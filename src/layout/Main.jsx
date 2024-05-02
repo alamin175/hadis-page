@@ -5,7 +5,7 @@ import LeftMenuBar from '../Pages/HomePage/LeftMenuBar'
 const Main = () => {
 	return (
 		<div>
-			<div className={'overflow-hidden'}>
+			<div className="overflow-hidden h-screen">
 				<div className="max-w-screen-2xl mx-auto">
 					<Navbar />
 					<div className="flex">
