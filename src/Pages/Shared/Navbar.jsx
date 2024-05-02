@@ -9,7 +9,7 @@ const Navbar = () => {
 			<div className="flex justify-between items-center">
 				<div className="flex items-center">
 					<Link to="/">
-						<img className="w-12" src={homeImg} alt="" />
+						<img className="w-9" src={homeImg} alt="" />
 					</Link>
 					<div className="ml-4">
 						<h1 className="font-extrabold text-[10px] md:text-[14px]">
