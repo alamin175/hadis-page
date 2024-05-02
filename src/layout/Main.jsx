@@ -6,13 +6,12 @@ const Main = () => {
 	return (
 		<div>
 			<div className={'overflow-hidden'}>
-				<div className="max-w-screen-xl mx-auto">
+				<div className="max-w-screen-2xl mx-auto">
 					<Navbar />
 					<div className="flex">
 						<div className="">
 							<LeftMenuBar />
 						</div>
-
 						<Outlet />
 					</div>
 				</div>

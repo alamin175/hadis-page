@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { DataContext } from '../../Context/GetDataContext'
 
 const Books = () => {
 	const [activeTab, setActiveTab] = useState(0)
+	const { chapter } = useContext(DataContext)
 	const tabsData = [{ label: 'বই' }, { label: 'অধ্যায়' }]
 	return (
 		<div>
@@ -55,9 +57,11 @@ const Books = () => {
 							1
 						</p>
 						<div className="ml-3">
-							<p className="text-[10px] font-semibold">Ohi</p>
+							<p className="text-[10px] font-semibold">
+								{chapter.title}
+							</p>
 							<p className="text-[8px] text-gray-500 mt-1">
-								হাদিসের রেঞ্জ :{''} 1
+								হাদিসের রেঞ্জ :{''} {chapter.hadis_range}
 							</p>
 						</div>
 					</div>
