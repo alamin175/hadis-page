@@ -1,10 +1,11 @@
 import { useContext } from 'react'
-import { GiBookshelf, GiHamburgerMenu } from 'react-icons/gi'
+import { GiBookshelf } from 'react-icons/gi'
 import { DataContext } from '../../Context/GetDataContext'
 import { IoBookOutline } from 'react-icons/io5'
 import { CiSettings, CiShare1, CiShare2 } from 'react-icons/ci'
 import { FaRegBookmark, FaRegCopy } from 'react-icons/fa'
 import { MdOutlineReport } from 'react-icons/md'
+import BooksDrawer from '../../components/DrawerData/BooksDrawer'
 
 const Hadis = () => {
 	const { hadis, book, chapter, section } = useContext(DataContext)
@@ -20,8 +21,8 @@ const Hadis = () => {
 			<div className="bg-white flex items-center justify-between p-4 rounded-b-xl">
 				<div className="flex items-center gap-4">
 					{/* <div className="  md:hidden">{<MainDrawer />}</div> */}
-					<div className="  xl:hidden">
-						<GiHamburgerMenu />
+					<div className="xl:hidden">
+						<BooksDrawer />
 					</div>
 
 					<GiBookshelf className="hidden xl:block -rotate-90 text-3xl text-emerald-500" />

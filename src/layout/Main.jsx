@@ -4,16 +4,14 @@ import LeftMenuBar from '../Pages/HomePage/LeftMenuBar'
 
 const Main = () => {
 	return (
-		<div>
-			<div className="overflow-hidden h-screen">
-				<div className="max-w-screen-2xl mx-auto">
-					<Navbar />
-					<div className="flex">
-						<div className="">
-							<LeftMenuBar />
-						</div>
-						<Outlet />
+		<div className="flex overflow-hidden h-screen">
+			<div>
+				<Navbar />
+				<div className="lg:flex ">
+					<div className="lg:static flex fixed bottom-0 bg-white lg:bg-transparent ">
+						<LeftMenuBar />
 					</div>
+					<Outlet />
 				</div>
 			</div>
 		</div>
